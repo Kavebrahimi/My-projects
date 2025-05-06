@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awsome/font-awesome-4.7.0/css/font-awesome.css">
+    <title>Real State</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/logo.png" alt="">
+            <div class="info">
+                <div>
+                    <a href="">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>Phone Number:</h5>
+                            <p>+01 (269) 876567</p>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.gmail.com" target="_blank">
+                        <i class="fa  fa-envelope"></i>
+                        <span>
+                            <h5>Email Address:</h5>
+                            <p>RealEstate@email.com</p>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.google.com/maps?q=King+Street,+USA" target="_blank">
+                        <i class="fa fa-location-arrow"></i>
+                        <span>
+                            <h5>Main Location:</h5>
+                            <p>King Street, USA</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/" target="_blank"><i  class="fab fa fa-facebook"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-brands fa-pinterest"></i></a>
+                <a href="https://telegram.org/" target="_blank"><i class="fa fa-brands fa-telegram"></i></a>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul class="desktop-nav">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a href="#our-properties">Properteis</a>
+            </li>
+            <li>
+                <a href="#our-agents">Agents</a>
+            </li>
+            <li>
+                <a href="#top-areas">Blog</a>
+            </li>
+            <li>
+                <a href="#callback">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="phone-ul">
+            <li>
+                <a href="#" id="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars">MENU</i></a>
+                <ul class="menu" id="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+        
+                    <li>
+                        <a href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#our-properties">Properteis</a>
+                    </li>
+                    <li>
+                        <a href="#our-agents">Agents</a>
+                    </li>
+                    <li>
+                        <a href="#top-areas">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#callback">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+            <input type="search" name="" placeholder="Search..." id="search-input">
+            <a href="#" id="search-open">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="#property-type">Add Property</a>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero">
+                <div>
+                    <img src="./images/villa.webp" alt="">
+                    <div>
+                        <input type="button" value="Buy">
+                        <input type="button" value="Sell">
+                        <input type="button" value="Rent">
+                    </div>
+                </div>
+                <div>
+                    <h5>MAKE A BEST DEAL</h5>
+                    <h1>Most Trusted Real Estate</h1>
+                    <p>With over 20 years of proven expertise and an unwavering commitment to integrity, we guide you through every step of your property journey—making buying, selling, or investing simple, transparent, and truly rewarding</p>
+                    <input type="button" value="Get Started" id="get-started" onclick="goToAbout()">
+                </div>
+            </div>
+            <div class="status">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <span>
+                        <p>Location</p>
+                        <h5>New York, 29 Street</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <p>Style</p>
+                        <h5>Modern, Minimalist</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-dollar"></i>
+                    <span>
+                        <p>Price Range</p>
+                        <h5>$13000-$50k</h5>
+                    </span>
+                </div>
+                <input type="button" value="Search" onclick="goToPropertyType()">
+            </div>
+        </section>
+        <section class="about" id="about-us">
+            <div>
+                <div>
+                    <h5>WHO WE ARE</h5>
+                    <h1>Make Your Dream Comes True With Us</h1>
+                    <p>With personalized guidance every step of the way, our expert agents leverage deep market insights and cutting-edge tools to find the perfect property or buyer for you—ensuring a seamless experience and peace of mind from start to closing</p>
+                    <div>
+                        <div>
+                            <i class="fa fa-user"></i>
+                            <span>
+                                <h2>55K</h2>
+                                <p>Satisfied People</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-check-circle"></i>
+                            <span>
+                                <h2>55K</h2>
+                                <p>Vrified Property</p>
+                            </span>
+                        </div>
+                    </div>
+                    <p> Start your property journey with confidence—our team is here to make your vision a reality.</p>
+                    <input type="button" value="Contact With Us" id="contact-with-us" onclick="goToForm()">
+                </div>
+                <div>
+                    <img src="./images/guys-laptop.webp" class="img-1">
+                    <img src="./images/2.avif" class="img-2">
+                    <span>
+                        <i class="fa fa-trophy"></i>
+                        <h4>25 Years Of Experience</h4>
+                    </span>
+                    <img src="./images/3.avif" class="img-3">
+                    <img src="./images/4.webp" class="img-4">
+                    <i class="fa fa-play"></i>
+                </div>
+            </div>
+            <div id="form-container">
+                <form action="">
+                    <table>
+                      <thead>
+                        <caption>Get in Touch</caption>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label for="name">Full Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your fullname">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="number"  id="phone-number" placeholder="Enetr your number">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="emial">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="property-type">Property Type:</label>
+                            <select name="" id="property-type">
+                              <option value="" disabled>Select</option>
+                              <option value="villa">Villa</option>
+                              <option value="apartment">Apartment</option>
+                              <option value="office">Office</option>
+                              <option value="commerical">Commerical</option>
+                              <option value="studio-house">Studio House</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="budget">Your Budget:</label>
+                            <input type="number" name="" id="budget" placeholder="e.g. 100000">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="message">Additional Details:</label>
+                            <textarea name="" id="message" placeholder="Tell us what are you looking for?..."></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="submit" name="" id="" value="Submit">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+            </div>
+        </section>
+        <section class="properties" id="our-properties">
+            <h5>OUR PROPERTIES</h5>
+            <h1>Our Feature Properties</h1>
+            <p>
+                Discover our featured properties—handpicked for their exceptional locations, outstanding value, and unique charm. Whether you’re looking for a cozy family home, a modern urban loft, or a high-yield investment opportunity, you’ll find the perfect match here</p>
+            <div class="slide-show">
+                <div>
+                    <div>
+                        <img src="./images/modern-house.webp" alt="">
+                        <span>For Rent</span>
+                        <span>Popular</span>
+                        <span>
+                            $13,500/
+                            <span>yr</span>
+                        </span>
+                    </div>
+                    <div>
+                        <div>
+                            <h5>Studio Home</h5>
+                            <h3>Modern house for Rent</h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>
+                                <i class="fa fa-bed"><span>Beds 3</span></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-bath"><span>Bath 2</span></i>
+
+                            </span>
+                            <span>
+                                <i class="fa fa fa-arrows "><span>1500 sqft</span></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                            <i class="fa fa-phone">Call Now</i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/Villa-living-room.webp" alt="">
+                        <span>For Rent</span>
+                        <span>Popular</span>
+                        <span>$450,000</span>
+                    </div>
+                    <div>
+                        <div>
+                            <h5>Villa</h5>
+                            <h3>Northwest Dining Space</h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>
+                                <i class="fa fa-bed"><span>Beds 3</span></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-bath"><span>Bath 3</span></i>
+
+                            </span>
+                            <span>
+                                <i class="fa fa fa-arrows "><span>1300 sqft</span></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                            <i class="fa fa-phone">Call Now</i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/COuntry-side.webp" alt="">
+                        <span>For Rent</span>
+                        <span>Popular</span>
+                        <span>$50k</span>
+                    </div>
+                    <div>
+                        <div>
+                            <h5>Commerical</h5>
+                            <h3>Countryside Modern home</h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <span>
+                                <i class="fa fa-bed"><span>Beds 3</span></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-bath"><span>Bath 2</span></i>
+
+                            </span>
+                            <span>
+                                <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                            <i class="fa fa-phone">Call Now</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="More Properties" id="property-open">
+            <div class="properties-container" id="properties-container">
+                <div>
+                    <div>
+                        <div>
+                            <img src="./images/house1.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$150k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Commerical</h5>
+                                <h3>Modern House To Rent</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds 3</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/hosue2.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$80k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Villa</h5>
+                                <h3>Countryside Modern Villa</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds 3</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/house3.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$180k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Villa</h5>
+                                <h3>Modern Villa</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds 3</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/house4.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$90k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Studio Home</h5>
+                                <h3>Normal House in Woods</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds 3</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/house5.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$50k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Commerical</h5>
+                                <h3>Countryside home</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds 3</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>2000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/house6.webp" alt="">
+                            <span>For Rent</span>
+                            <span>$200k</span>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Commerical</h5>
+                                <h3>Modern Office</h3>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>
+                                    <i class="fa fa-bed"><span>Beds x</span></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-bath"><span>Bath 2</span></i>
+    
+                                </span>
+                                <span>
+                                    <i class="fa fa fa-arrows "><span>4000 sqft</span></i>
+                                </span>
+                            </div>
+                            <hr>
+                            <div>
+                                <i class="fa fa-map-marker"><span>Melbourne</span></i>
+                                <i class="fa fa-phone">Call Now</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-back" id="callback">
+            <div>
+                <img src="./images/young-couple-holding-key-new-home-hand.webp" alt="">
+                <i class="fa fa-trophy"></i>
+                <img src="./images/beautiful-shot-modern-house-kitchen-dining-room.webp" alt="">
+                <img src="./images/house-isolated-field.jpg" alt="">
+                <div>
+                    <div>
+                        <img src="./images/E1.webp" alt="">
+                        <img src="./images/E2.webp" alt="">
+                        <img src="./images/E3.webp" alt="">
+                        <img src="./images/E4.webp" alt="">
+                        <img src="./images/E5.webp" alt="">
+                    </div>
+                    <a href="#reviews">15k+ <span>Positive Reviews</span></a>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div>
+                <h5>CALL BACK</h5>
+                <h1>Providing The Best Real Estate Property</h1>
+                <p>Our dedicated team goes above and beyond to ensure every property we offer meets the highest standards of quality, location, and value—helping you find the home or investment opportunity you’ve been dreaming of</p>
+                <div>
+                    <div>
+                        <span>
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <span>
+                            Our Hot Line: <br>
+                            +23 156 897 33
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <span>
+                            Mail Us: <br>
+                            RealEstate@gmail.com
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p>With an extensive network of industry partners and innovative marketing strategies, we ensure you benefit from expert advice and seamless transactions every step of the way</p>
+                    <input type="button" value="Contact Us Now" id="go-to-about" onclick="goToAbout2()">
+                </div>
+            </div>
+        </section>
+        <section class="process" id="working-process">
+            <h5>WORKING PROCESS</h5>
+            <h1>How It Wroks</h1>
+            <p>Finding your ideal property shouldn’t be complicated. Our streamlined four-step process combines cutting-edge market analysis, personalized support, and expert negotiation—so you can move from search to settlement with confidence and ease.</p>
+            <div>
+                <div>
+                    <img src="./images/House-icon.webp" alt="">
+                    <h3>Find Property</h3>
+                    <p>Pick a time that works for you—our agent will walk you through each property and highlight what matters most</p>
+                    <span>01</span>
+                </div>
+                <div>
+                    <img src="./images/hand-shake.webp" alt="">
+                    <h3>Make A Deal</h3>
+                    <p> We help you craft a strong, competitive offer, negotiate terms, and handle all the paperwork.</p>
+                    <span>02</span>
+                </div>
+                <div>
+                    <img src="./images/Key-in-hand.webp" alt="">
+                    <h3>Get Your Key</h3>
+                    <p>From financing advice through the final walkthrough, we manage every detail—and stay available for any post-sale support.!</p>
+                    <span>03</span>
+                </div>
+            </div>
+        </section>
+        <section class="agents" id="our-agents">
+            <h5>OUR AGENTS</h5>
+            <h1>Our Exclusive Agents</h1>
+            <p>Our exclusive agents represent the top tier of real estate expertise—hand-picked for their deep local knowledge, proven negotiation prowess, and unwavering commitment to your goals. They tap into off-market opportunities and industry insider networks to find the perfect match, guiding you with white-glove service from first consultation to closing day.</p>
+            <div>
+                <div>
+                    <img src="./images/agent2.webp" alt="">
+                    <span>2 Listing</span>
+                    <div>
+                        <h3>David Lee</h3>
+                        <h6>Sunshine</h6>
+                        <i class="fa fa-phone">
+                            <span>Call: +7534 234 456</span>
+                        </i>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/agent1.webp" alt="">
+                    <span>4 Listing</span>
+                    <div>
+                        <h3>Rosy Janner</h3>
+                        <h6>Sunshine</h6>
+                        <i class="fa fa-phone">
+                            <span>Call: +7534 234 769</span>
+                        </i>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/agent3.png" alt="">
+                    <span>1 Listing</span>
+                    <div>
+                        <h3>Mike Hussy</h3>
+                        <h6>Eco Builder</h6>
+                        <i class="fa fa-phone">
+                            <span>Call: +8753 356 235</span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="View All Agents" id="agents-btn">
+            <div class="agents-container" id="agents-container">
+                <div>
+                    <div>
+                        <img src="./images/agent4.webp" alt="">
+                        <div>
+                            <h3>Olivia Parker</h3>
+                            <h6>Eco Builder</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +9834 566 986</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent5.webp" alt="">
+                        <div>
+                            <h3>Liam Thompson</h3>
+                            <h6>Sunshine</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8753 356 235</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent6.webp" alt="">
+                        <div>
+                            <h3>Ethan Cooper</h3>
+                            <h6>Eco Builder</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8786 192 255</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent7.webp" alt="">
+                        <div>
+                            <h3>Emma Johnson</h3>
+                            <h6>Sunshine</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8753 875 863</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent8.webp" alt="">
+                        <div>
+                            <h3>Noah Brooks</h3>
+                            <h6>Eco Builder</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8753 356 235</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent9.webp" alt="">
+                        <div>
+                            <h3>Sophia Carter</h3>
+                            <h6>Sunshine</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8753 875 122</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent10.webp" alt="">
+                        <div>
+                            <h3>Chloe Bennett</h3>
+                            <h6>Eco Builder</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8753 083 935</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/agent11.webp" alt="">
+                        <div>
+                            <h3>Jack Harrison</h3>
+                            <h6>Eco Builder</h6>
+                            <i class="fa fa-phone">
+                                <span>Call: +8700 356 035</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="property-type" id="property-type">
+            <div>
+                <h5>PROPERTY TYPE</h5>
+                <h1>Easy To Explore by Property Type</h1>
+                <p>Quickly find properties by type—apartments, homes, commercial spaces, or land—with our simple filters.</p>
+                <i class="fa fa-check">
+                    Reliable: A worry-free, risk-free transaction
+                </i>
+                <i class="fa fa-check">
+                    Fast: A simple process completed in minimal time
+                </i>
+                <i class="fa fa-check">
+                    Transparent: Clear, comprehensive information at every stage
+                </i>
+                <ul>
+                    <li>
+                        <input type="button" value="View More" id="property-open" onclick="openMenu()">
+                        <ul id="property-menu">
+                            <li>Retail Store</li>
+                            <li>Gym</li>
+                            <li>Vacant Land</li>
+                            <li>Twonhouse</li>
+                            <li>Penthouse</li>
+                            <li>Hotels</li>
+                            <li>Factories</li>
+                            <li>Workshops</li>
+                            <li>Storage Units</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/apartment.png" alt="">
+                    <h4>Apartments</h4>
+                    <p>4 Listing</p>
+                </div>
+                <div>
+                    <img src="./images/skyscrapers.png" alt="">
+                    <h4>Commerical</h4>
+                    <p>2 Listing</p>
+                </div>
+                <div>
+                    <img src="./images/office-building.png" alt="">
+                    <h4>Office</h4>
+                    <p>1 Listing</p>
+                </div>
+                <div>
+                    <img src="./images/restaurant.png" alt="">
+                    <h4>Restaurant</h4>
+                    <p>2 Listing</p>
+                </div>
+                <div>
+                    <img src="./images/apartment(1).png" alt="">
+                    <h4>Studio Home</h4>
+                    <p>1 Listing</p>
+                </div>
+                <div>
+                    <img src="./images/villa.png" alt="">
+                    <h4>Villa</h4>
+                    <p>2 Listing</p>
+                </div>
+            </div>
+        </section>
+        <section class="areas" id="top-areas">
+            <h5>TOP AREAS</h5>
+            <h1>Find Comfort Location</h1>
+            <p> Quickly discover neighborhoods that match your comfort—urban energy, suburban calm, or coastal peace.</p>
+            <div>
+                <div>
+                    <img src="./images/California.webp" alt="">
+                    <h4>California</h4>
+                    <span>04 Properties</span>
+                </div>
+                <div>
+                    <img src="./images/lousiana.webp" alt="">
+                    <h4>Louisiana</h4>
+                    <span>01 Properties</span>
+                </div>
+                <div>
+                    <img src="./images/Kanas.webp" alt="">
+                    <h4>Kansas</h4>
+                    <span>02 Properties</span>
+                </div>
+                <div>
+                    <img src="./images/Abiene.webp" alt="">
+                    <h4>Abiene</h4>
+                    <span>02 Properties</span>
+                </div>
+                <div>
+                    <img src="./images/new-jersey.webp" alt="">
+                    <h4>New Jersey</h4>
+                    <span>06 Properties</span>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="reviews">
+            <h5>OUR TESTIMONIALS</h5>
+            <h1>Customer Honest Reviews</h1>
+            <p>Real voices, real experiences. Our customers share their honest reviews about finding their perfect property with us—highlighting the trust, transparency, and satisfaction they experienced every step of the way</p>
+            <div>
+                <div>
+                    <img src="./images/C3.webp" alt="">
+                    <p>I found my dream home so easily thanks to this amazing platform. The listings were clear, and the agents were super supportive</p>
+                    <div>
+                        <div>
+                            <h3>Kenya Soval</h3>
+                            <h5>Customer</h5>
+                        </div>
+                        <div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-empty"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/C2.webp" alt="">
+                    <p>Fast, professional, and transparent. Everything from searching to closing was smooth. Highly recommend this real estate site</p>
+                    <div>
+                        <div>
+                            <h3>Roy Bennet</h3>
+                            <h5>Customer</h5>
+                        </div>
+                        <div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/C1.webp" alt="">
+                    <p>"Best experience ever! I loved how simple it was to filter properties and connect with knowledgeable agents. Thank you!"</p>
+                    <div>
+                        <div>
+                            <h3>Jonas Hob</h3>
+                            <h5>Customer</h5>
+                        </div>
+                        <div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-empty"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <div>
+                    <h4>About Our Compony</h4>
+                    <p>We are a trusted real estate company committed to connecting people with their perfect homes and investment opportunities. With years of experience, a dedicated team, and a passion for service, we make every property journey smooth and rewarding.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="#about-us">About Us</a>
+                    <a href="#our-properties">Property Details</a>
+                    <a href="#reviews">News & Article</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+                <div>
+                    <h4>Contact Information</h4>
+                    <p>
+                        Feel free to contact & reach us ! <br><br>
+                        Address: 22th Streets, Colorado <br>
+                        Phone: +988-256-266-88 <br>
+                        Fax: (+0)125-365-88
+                    </p>
+                </div>
+                <div>
+                    <h3>Useful Links</h3>
+                    <a href="#top-areas">Help Center</a>
+                    <a href="#callback">Contact Us</a>
+                    <a href="#about-us">Support</a>
+                    <a href="#">Privacy & Policy</a>
+                </div>
+            </div>
+            <div>
+                <a href="https://facebook.com/"><i class="fa fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa fa-brands fa-pinterest"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </main>
+    <a href="#top" id="scroll-top">
+        <img src="./images/arrow.png" alt="">
+    </a>
+    <script src="./script.js"></script>
+</body>
+   
